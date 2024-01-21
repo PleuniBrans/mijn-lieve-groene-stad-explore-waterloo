@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Explore Waterloo</title>
+      <link rel="stylesheet" href="stylesheet.css">
+
+      <style>
+         body{
+             margin:0;
+             padding:0;
+         }
+
+
+         /* navbar */
+.topnav {
+    position: fixed;
+    width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  z-index:9999;
+  /*position: relative;*/
+
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a, .topnav .bar  {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+
+}
+
+.topnav a{
+
+  padding: 14px 16px;
+
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+    padding: 7px 11px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bar {
+  background-color: #04AA6D;
+  color: white;
+}
+.bar:hover {
+  background-color: #04AA6D;
+
+}
+
+
+
+
+
+.menu-offset-container{
+  padding-top: 80px;
+}
+
+
+
+
+
+
+
+
+         .map-container{
+         margin:  0 auto;
+         width:375px;
+         height: 1770px;
+         }
+         .map-dot{
+             cursor:pointer;
+             background: red;
+             position: absolute;
+             height: 20px;
+             width: 20px;
+             border-radius: 100%;
+             border: 3px solid  green;
+         }
+         .map-text{
+            border-top: solid 7px green;
+            border-left: solid 3px green;
+             pointer-events: none;
+             background: pink;
+             position: absolute;
+             height: 200px;
+             width: 200px;
+             transition: opacity ease-in-out 0.3s;
+             opacity: 0;
+         }
+         .map-shown{
+            opacity: 1;
+         }
+         .map-text h3{
+            border-bottom: solid 3px green;
+            background: red;
+            margin: 0;
+            padding: 10px;
+            display: inline-block;
+         }
+      </style>
+   </head>
+   <body>
+
+
+
+<!-- Top Navigation Menu Start-->
+<div class="topnav">
+  <div class="bar">
+
+<img height="55" width="55" src="opmaak/logo/def/logo-def-wit.svg"/>
+
+
+
+</div>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    ⁠ <svg width="37" height="41" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12">
+  <path d="M.75.75h16.5M.75,6h16.5M.75,11.25h16.5" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
+</svg> ⁠
+  </a>
+</div>
+
+<!-- Top Navigation Menu End-->
+
+
+
+    <div class="menu-offset-container">
+
+      <div class="map-container">
+        
+
+
+
+         <div style="transform: translate(128px,139px);" class="map-dot" id="vic_van_dalen"></div>
+         <div style="transform: translate(78px,169px);" class="map-text"  id="vic_van_dalen_text">
+            <h3>vic_van_dalen</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         </div>
+
+
+
+
+
+
+
+
+
+         <div style="transform: translate(37px,384px);" class="map-dot" id="nassar"></div>
+         <div style="transform: translate(75px,384px);" class="map-text"  id="nassar_text">
+            <h3>nassar</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+
+
+
+
+
+
+
+
+         <div style="transform: translate(236px,1042px);" class="map-dot" id="anatoli"></div>
+         <div style="transform: translate(145px,1076px);" class="map-text"  id="anatoli_text">
+            <h3>anatoli</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+
+
+
+
+
+
+
+         <div style="transform: translate(236px,1436px);" class="map-dot" id="jess"></div>
+         <div style="transform: translate(145px,1471px);" class="map-text"  id="jess_text">
+            <h3>jess</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+
+
+
+
+
+
+         <img width="375px" height="1770px" src="opmaak/afb/opvul-afb/page-one.jpg">
+      </div>
+  </div>
+      <script>
+
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+         document.querySelector('#vic_van_dalen').onclick = function(){
+         
+             var shown = document.querySelector('#vic_van_dalen_text').classList.contains('map-shown');
+        
+             for(var element of document.querySelectorAll('.map-text')){
+                 element.classList.remove('map-shown');
+             }
+         
+             if(shown){
+                document.querySelector('#vic_van_dalen_text').classList.remove('map-shown');
+             }else{
+                document.querySelector('#vic_van_dalen_text').classList.add('map-shown');
+             }
+         };
+         
+         document.querySelector('#nassar').onclick = function(){
+             var shown = document.querySelector('#nassar_text').classList.contains('map-shown');
+         
+             for(var element of document.querySelectorAll('.map-text')){
+                 element.classList.remove('map-shown');
+             }
+         
+                 document.querySelector('#nassar_text').classList.toggle('map-shown');
+          
+             if(shown){
+                document.querySelector('#nassar_text').classList.remove('map-shown');
+             }else{
+                document.querySelector('#nassar_text').classList.add('map-shown');
+             }
+                 
+         };
+
+
+
+
+         document.querySelector('#anatoli').onclick = function(){
+             var shown = document.querySelector('#anatoli_text').classList.contains('map-shown');
+         
+             for(var element of document.querySelectorAll('.map-text')){
+                 element.classList.remove('map-shown');
+             }
+         
+                 document.querySelector('#anatoli_text').classList.toggle('map-shown');
+          
+             if(shown){
+                document.querySelector('#anatoli_text').classList.remove('map-shown');
+             }else{
+                document.querySelector('#anatoli_text').classList.add('map-shown');
+             }
+                 
+         };
+
+
+
+
+         document.querySelector('#jess').onclick = function(){
+             var shown = document.querySelector('#jess_text').classList.contains('map-shown');
+         
+             for(var element of document.querySelectorAll('.map-text')){
+                 element.classList.remove('map-shown');
+             }
+         
+                 document.querySelector('#jess_text').classList.toggle('map-shown');
+          
+             if(shown){
+                document.querySelector('#jess_text').classList.remove('map-shown');
+             }else{
+                document.querySelector('#jess_text').classList.add('map-shown');
+             }
+                 
+         };
+      </script>
+   </body>
+</html>
