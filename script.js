@@ -1,9 +1,8 @@
-
-function menuToggle() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+const menuToggle = () => {
+    const linksElement = document.querySelector('#myLinks');
+    if (linksElement.style.display === 'block') {
+      linksElement.style.display = 'none';
+    } else {
+      linksElement.style.display = 'block';
+    }
   }
-}
