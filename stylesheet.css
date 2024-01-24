@@ -1,292 +1,372 @@
+@font-face {
+  font-family: "Lora";
+  src: url('opmaak/fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Verilate";
+  src: url('opmaak/fonts/verilet/Verilate Reguler.ttf') format('truetype');
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(opmaak/achtergrond.png); /* Added semicolon here */
-    background-size: cover;
-    background-repeat: repeat-y;
-    height: 100vh;
+  font-family: 'Lora', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(opmaak/achtergrond.png);
+  /* Added semicolon here */
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100vh;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Verilate', Arial, Helvetica, sans-serif;
+}
+
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .column {
-    background: #ecf0f1;
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
-  }
-  .timeline-text, .timeline-image{
-    height: 40vw;
-    width: auto;
-  }
-  .timeline-image{
-    background-size: cover;
-    background-position: center;
-  }
-  .text-box{
-    padding: 30px;
-  }
-  .dot{
-    transform: translate(-13px,-10px);
-    background:#da1219;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border-radius: 100%;
-    border: 3px solid #870b14;
-  }
-  .line{
-    transform: translate(-3.5px,-10px);
-    background: #870b14;
-    width: 7px;
-    height: 100%;
-    position: absolute;
-  }
-  body{
-    margin:0;
-    padding:0;
-  }
-  /* navbar */
-  .topnav {
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    background-color: #da1219;
-    z-index:2;
-  }
-  .topnav #myLinks {
-    display: none;
-  }
-  .topnav a, .topnav .bar {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  .topnav a{
-    padding: 14px 16px;
-  }
-  .topnav .icon {
-    height: 65px;
-    cursor: pointer;
-    background: #da1219;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .bar img {
-    padding: 2px 11px;
-  }
-  .icon svg {
-    padding: 20px 11px;
-  }
-  .topnav a:hover,  .topnav .icon:hover {
-    background-color: #870b14;
-    color: black;
-  }
-  .bar {
-    background-color:#da1219;
-    color: white;
-    height: 65px;
-  }
-  .bar:hover {
-    background-color: #da1219;
-  }
-  .menu-offset-container{
-    padding-top: 80px;
-  }
-  .map-container{
-    margin: 0 auto;
-    width:375px;
-    height: 1770px;
-  }
-  .map-dot{
-    cursor:pointer;
-    background: red;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    border: 4px solid #870b14;
-  }
-  .map-text{
-    border-top: solid 4px #870b14;
-    border-left: solid 4px #870b14;
-    pointer-events: none;
-    background: white;
-    position: absolute;
-    height: 200px;
-    width: 200px;
-    transition: opacity ease-in-out 0.3s;
-    opacity: 0;
-  }
-  .map-shown{
-    opacity: 1;
-  }
-  .map-text h3{
-    border-bottom: solid 3px #870b14;
-    margin: 0;
-    padding: 10px;
-    display: inline-block;
-  }
-  body{
-    margin: 0;
-    padding: 0;
-  }
-
-  .header-image-2{
-    background-image: url(opmaak/afb/img/header-optie-2.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 40vh;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-  .header-image{
-    background-image: url(opmaak/afb/img/header-optie-2.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-  }
-  .article{
-    max-width: 960px;
-    margin: 0 auto;
-    transform: translate(0px,-78px);
-    margin-bottom: 65px;
-  }
-  .article-text {
-    border-top:5px solid #870b14;
-    border-left:3px solid #870b14;
-    margin:0 30px;
-    background: white;
-  }
-
-  .article-text h2{
-    padding: 20px;
-    margin:0;
-    display: inline-block;
-    border-bottom: 3px solid #870b14;
-  }
-  .article-text p{
-    margin:0;
-    padding: 20px;
-  }
-  
-  body{
-    margin:0;
-    overflow-x:hidden;
-    }
-    
-    .footer{
-    background: #da1219;
-    padding:25px 0px;
-    font-family: 'Play', sans-serif;
-    text-align:center;
-    }
-    
-    .footer .row{
-    width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
-    color:white;
-    font-size:0.8em;
-    }
-    
-    .footer .row a{
-    text-decoration:none;
-    color:rgb(255, 255, 255);
-    transition:0.5s;
-    }
-    
-    .footer .row a:hover{
-    color:#494949;
-    }
-    
-    .footer .row ul{
-    width:100%;
-    }
-    
-    @media (max-width:720px){
-    .footer{
-    text-align:center;
-    padding:5%;
-    }
-    .footer .row ul li{
-    display:block;
-    margin:10px 0px;
-    text-align:left;
-    }
-    .footer .row a i{
-    margin:0% 3%;
-    }
-    }
-
-    .knop {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        border-radius: 4px;
-        transition: background-color 0.3s;
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .knop {
-        color: #fff;
-        background-color: #da1219;
-        border: 5px solid #870b14;
-    }
-    
-    .knop:hover {
-        background-color: #870b14;
-    }
-
-   
-.afb-tekstvak{
-    background-image: url('opmaak/afb/img/ontdek-kramen.jpeg');
-    background-size: auto;
-    background-position: center;
-    height: 300px;
-    width: 100%;
-    border-radius: 10%;
+.column {
+  background: #ecf0f1;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
 }
 
-.afb-tekstvak{
-    background-image: url('opmaak/afb/img/geschiedenis.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 100%;
-    border-radius: 10%;
+.timeline-text,
+.timeline-image {
+  height: 40vw;
+  width: auto;
 }
 
+.timeline-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.text-box {
+  padding: 30px;
+}
+
+.dot {
+  transform: translate(-16px, -10px);
+  background: #da1219;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 100%;
+  border: 3px solid #870b14;
+}
+
+.date-text {
+  background: #da1219;
+  padding: 0 5px;
+  border-radius: 6px;
+  position: absolute;
+  font-family: 'Lora', Arial, Helvetica, sans-serif;
+}
+
+.column:nth-child(even) {
+  border-left: #870b14 solid 5px;
+}
+
+.date-text-left {
+  transform: translate(-85px, -35px);
+}
+
+.date-text-right {
+  transform: translate(21px, -35px);
+}
+
+.line {
+  transform: translate(-3.5px, -10px);
+  background: #870b14;
+  width: 7px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+.topnav {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-color: #da1219;
+  z-index: 2;
+}
+
+.topnav svg path {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5px;
+}
+
+.topnav #nav-links {
+  display: none;
+}
+
+.topnav #nav-links a,
+.topnav .bar {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav #nav-links a {
+  padding: 14px 16px;
+}
+
+.topnav .icon {
+  height: 65px;
+  cursor: pointer;
+  background: #da1219;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bar img {
+  padding: 2px 11px;
+}
+
+.icon svg {
+  padding: 20px 11px;
+}
+
+.topnav #nav-links a:hover,
+.topnav .icon:hover {
+  background-color: #870b14;
+  color: black;
+}
+
+.bar {
+  background-color: #da1219;
+  color: white;
+  height: 65px;
+}
+
+.bar:hover {
+  background-color: #da1219;
+}
+
+.menu-offset-container {
+  padding-top: 80px;
+}
+
+.map-container {
+  margin: 0 auto;
+  width: 375px;
+  height: 1770px;
+}
+
+.map-dot {
+  cursor: pointer;
+  background: red;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 4px solid #870b14;
+}
+
+.map-text {
+  border-top: solid 4px #870b14;
+  border-left: solid 4px #870b14;
+  pointer-events: none;
+  background: white;
+  position: absolute;
+  height: 400px;
+  width: 200px;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.map-shown {
+  opacity: 1;
+}
+
+.map-text h3 {
+  border-bottom: solid 3px #870b14;
+  margin: 0;
+  padding: 10px;
+  display: inline-block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-image-2 {
+  background-image: url(opmaak/afb/img/header-optie-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
 
 .header-image {
-    background-image: url(opmaak/afb/img/header-optie-2.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    position: relative;
-    text-align: center; /* Center the child elements horizontally */
+  background-image: url(opmaak/afb/img/header-optie-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.article {
+  max-width: 960px;
+  margin: 0 auto;
+  transform: translate(0px, -78px);
+  margin-bottom: 65px;
+}
+
+.article-text {
+  border-top: 5px solid #870b14;
+  border-left: 3px solid #870b14;
+  margin: 0 30px;
+  background: white;
+}
+
+.article-text h2 {
+  padding: 20px;
+  margin: 0;
+  display: inline-block;
+  border-bottom: 3px solid #870b14;
+}
+
+.article-text p {
+  margin: 0;
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.footer {
+  background: #da1219;
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #494949;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+@media (max-width:720px) {
+  .footer {
+    text-align: center;
+    padding: 5%;
+  }
+
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+
+.knop {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.knop {
+  color: #fff;
+  background-color: #da1219;
+  border: 5px solid #870b14;
+}
+
+.knop:hover {
+  background-color: #870b14;
+}
+
+.map-text img {
+  width: 100%;
+  height: auto;
+}
+
+.afb-tekstvak {
+  background-image: url('opmaak/afb/img/ontdek-kramen.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.logo-tekst {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: -8px;
+  pointer-events: none;
+}
+
+.header-image {
+  background-image: url(opmaak/afb/img/header-optie-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  text-align: center;
 }
 
 .header-image h1 {
-    position: absolute;
-    top: 50%; /* Adjust the top position as needed */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    background-color: #870b14;
+  position: absolute;
+  top: 42%;
+  color: #fff;
+  background-color: #870b14;
+  text-align: center;
+  width: 100%;
 }
-
-
-
-
-

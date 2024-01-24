@@ -3,31 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Explore Waterloo</title>
+        <title>Home Explore Waterloo</title>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <!-- Top Navigation Menu Start-->
-        <div class="topnav">
+         <!-- Top Navigation Menu Start-->
+        <nav class="topnav">
             <div class="bar">
-                <img height="55" width="55" src="opmaak/logo/def/logo-def-web.svg" alt="logo-explore-waterloo"/>
-                <img height="55" width="55" src="opmaak/logo/def/tekst-logo.svg" alt="logo-tekst">
+                <a href="index.html"><img height="55" width="55" src="opmaak/logo/def/logo-def-web.svg" alt="logo-explore-waterloo"/></a>
+                <div class="logo-tekst">
+                    <img height="75" width="75" src="opmaak/logo/def/tekst-logo.svg" alt="Explore Waterloo Amsterdam">
+                </div>
             </div>
-            <div id="myLinks">
+            <div id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="page-two.html">Map</a>
-                <a href="page-one.html">timeline</a>
+                <a href="page-one.html">Timeline</a>
             </div>
             <div class="icon" onclick="menuToggle()">
                 <svg width="37" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12">
-                    <path d="M.75.75h16.5M.75,6h16.5M.75,11.25h16.5" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
+                    <path d="M.75.75h16.5M.75,6h16.5M.75,11.25h16.5"/>
                 </svg>
             </div>
-        </div>
+        </nav>
         <!-- Top Navigation Menu End-->
         <div class="header-image">
-        <h1>Explore Waterloo</h1>
-         </div>
+            <h1>Explore Waterloo</h1>
+        </div>
         <div class="article">
             <div class="article-text">
                 <h2>Over ons</h2>
@@ -39,11 +41,11 @@
         <div class="article">
             <div class="article-text">
                 <h2>Ontdek de geschiedenis</h2>
-                <img class="afb-tekstvak" src="opmaak/afb/img/geschiedenis.jpeg" alt="">
+                <img class="afb-tekstvak" src="opmaak/afb/img/geschiedenis.jpg" alt="">
                 <p>
                     Stap terug in de tijd en ontdek wat het Waterlooplein gevormd heeft zoals het als de dag vandaag te zien is. Reis terug naar de 19e eeuw en ontdek de evolutie van dit iconische plein.
                 </p>
-                <a href="page-one.html" class="knop">Ontdek de geschiedenis</a>
+                <a href="page-one.html" class="knop">Ontdek <br/>de geschiedenis</a>
             </div>
         </div>
         <div class="article">
@@ -53,22 +55,20 @@
                 <p>
                     Ontdek de diverse kramen die te vinden zijn op Waterlooplein. Van unieke antieke vondsten, tot verschillende boeken tot de parels tussen de vintage kleding is er van alles te vinden. Verken de verhalen achter de kramen en verkopers en laat je inspireren voor je volgende
                 </p>
-                <a href="page-two.html" class="knop">Ontdek de kramen</a>
+                <a href="page-two.html" class="knop">Ontdek <br/>de kramen</a>
             </div>
         </div>
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="https://www.facebook.com/waterloopleinmarkt/">Facebook</a><br/>
+                    <a href="https://waterlooplein.amsterdam/contacts/#:~:text=originalflowergift%40outlook.com">Contact</a>
+                </div>
+                <div class="row">
+                    Pleuni Brans Copyright © All rights reserved 
+                </div>
+            </div>
+        </footer>
         <script src="script.js"></script>
     </body>
-    <footer>
-        <div class="footer">
-            <div class="row">
-                <ul>
-                    <li><a href="https://www.facebook.com/waterloopleinmarkt/">Facebook</a></li>
-                    <li><a href="https://waterlooplein.amsterdam/contacts/#:~:text=originalflowergift%40outlook.com">Contact</a></li>
-                </ul>
-            </div>
-            <div class="row">
-                Pleuni Brans Copyright © All rights reserved 
-            </div>
-        </div>
-    </footer>
 </html>

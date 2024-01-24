@@ -3,62 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Explore Waterloo</title>
+        <title>Map Explore Waterloo</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <style>
-        </style>
     </head>
     <body>
         <!-- Top Navigation Menu Start-->
-        <div class="topnav">
+        <nav class="topnav">
             <div class="bar">
-                <img height="55" width="55" src="opmaak/logo/def/logo-def-wit.svg"/>
+                <a href="index.html"><img height="55" width="55" src="opmaak/logo/def/logo-def-web.svg" alt="logo-explore-waterloo"/></a>
+                <div class="logo-tekst">
+                    <img height="75" width="75" src="opmaak/logo/def/tekst-logo.svg" alt="Explore Waterloo Amsterdam">
+                </div>
             </div>
-            <div id="myLinks">
+            <div id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="page-two.html">Map</a>
-                <a href="page-one.html">timeline</a>
+                <a href="page-one.html">Timeline</a>
             </div>
             <div class="icon" onclick="menuToggle()">
                 <svg width="37" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 12">
-                    <path d="M.75.75h16.5M.75,6h16.5M.75,11.25h16.5" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5px;"/>
+                    <path d="M.75.75h16.5M.75,6h16.5M.75,11.25h16.5"/>
                 </svg>
             </div>
-        </div>
+        </nav>
         <!-- Top Navigation Menu End-->
-    
-        <div class="menu-offset-container">
-            <div class="map-container">
-                <div style="transform: translate(128px,139px);" class="map-dot" id="vic_van_dalen"></div>
-                <div style="transform: translate(78px,169px);" class="map-text"  id="vic_van_dalen_text">
-                    <h3>vic_van_dalen</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
-                <div style="transform: translate(37px,384px);" class="map-dot" id="nassar"></div>
-                <div style="transform: translate(75px,384px);" class="map-text"  id="nassar_text">
-                    <h3>nassar</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
-                <div style="transform: translate(236px,1042px);" class="map-dot" id="anatoli"></div>
-                <div style="transform: translate(145px,1076px);" class="map-text"  id="anatoli_text">
-                    <h3>anatoli</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
-                <div style="transform: translate(236px,1436px);" class="map-dot" id="jess"></div>
-                <div style="transform: translate(145px,1471px);" class="map-text"  id="jess_text">
-                    <h3>jess</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
-                <img width="375px" height="1770px" src="opmaak/afb/opvul-afb/page-one.jpg">
+        <div class="header-image">
+            <h1>Explore Waterloo</h1>
+        </div>
+        <div class="article">
+            <div class="article-text">
+                <h2>Over ons</h2>
+                <p>
+                    Welkom op de website Explore Waterlooplein. Op deze website vind je het aanbod en diversiteit van marktkramen. Van antiek tot en met vintage kleding. Ook vind je een wandeling door de geschiedenis van de Waterlooplein en de markt door middel van een tijdlijn. ontdek de verhalen achter de kraamhouders, de ontwikkeling van de markt door de jaren heen en bijzondere vondstend die deze plek te bieden heeft.
+                </p>
             </div>
+        </div>
+        <div class="map-container">
+            <div style="transform: translate(128px,139px);" class="map-dot" id="vic_van_dalen"></div>
+            <div style="transform: translate(78px,169px);" class="map-text"  id="vic_van_dalen_text">
+                <h3>vic_van_dalen</h3>
+                <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div style="transform: translate(37px,384px);" class="map-dot" id="nassar"></div>
+            <div style="transform: translate(75px,384px);" class="map-text"  id="nassar_text">
+                <h3>nassar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div style="transform: translate(236px,1042px);" class="map-dot" id="anatoli"></div>
+            <div style="transform: translate(145px,1076px);" class="map-text"  id="anatoli_text">
+                <h3>anatoli</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div style="transform: translate(236px,1436px);" class="map-dot" id="jess"></div>
+            <div style="transform: translate(145px,1471px);" class="map-text"  id="jess_text">
+                <h3>jess</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <img width="375px" height="1770px" src="opmaak/afb/opvul-afb/page-one.jpg">
         </div>
         <script src="map.js"></script>
         <script src="script.js"></script>
