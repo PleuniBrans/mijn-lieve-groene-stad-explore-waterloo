@@ -26,6 +26,7 @@ h4,
 h5,
 h6 {
   font-family: 'Verilate', Arial, Helvetica, sans-serif;
+  color: #da1219;
 }
 
 .container {
@@ -81,10 +82,12 @@ h6 {
 
 .date-text-left {
   transform: translate(-85px, -35px);
+  color: #fff;
 }
 
 .date-text-right {
   transform: translate(21px, -35px);
+  color: #fff;
 }
 
 .line {
