@@ -1,5 +1,5 @@
 const stands = [
-    'vic_van_dalen',
+    'carinas_second_hand',
     'nassar',
     'anatoli',
     'jess',

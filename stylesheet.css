@@ -12,7 +12,7 @@ body {
   font-family: 'Lora', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(opmaak/achtergrond.png);
+  background-image: url(opmaak/achtergrond/achtergrond-web.svg);
   /* Added semicolon here */
   background-size: cover;
   background-repeat: repeat-y;
@@ -54,6 +54,7 @@ h6 {
 
 .text-box {
   padding: 30px;
+ font-size: 9px;
 }
 
 .dot {
@@ -217,12 +218,12 @@ body {
   padding: 0;
 }
 
-.header-image-2 {
+/* .header-image-2 {
   background-image: url(opmaak/afb/img/header-optie-2.jpeg);
   background-size: cover;
   background-position: center;
   height: 40vh;
-}
+} */
 
 .header-image {
   background-image: url(opmaak/afb/img/header-optie-2.jpeg);
@@ -230,6 +231,7 @@ body {
   background-position: center;
   height: 70vh;
 }
+
 
 .article {
   max-width: 960px;
